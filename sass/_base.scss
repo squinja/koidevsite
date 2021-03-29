@@ -1,0 +1,85 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+@font-face {
+  font-family: "ultraregular";
+  src: url("../css/fonts/ultra_fabienkorn-webfont.woff2") format("woff2"),
+    url("../css/fonts/ultra_fabienkorn-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #ff8080;
+  --color-primary-light: #ffb6b6;
+  --color-primary-dark: #e23939;
+
+  --color-gray-light-1: #faf9f9;
+  --color-gray-light-2: #f4f2f2;
+  --color-gray-light-3: #f0eeee;
+  --color-gray-light-4: #ccc;
+
+  --color-gray-dark-1: #999;
+  --color-gray-dark-2: #777;
+  --color-gray-dark-3: #333;
+  --color-gray-dark-4: #222;
+
+  --nav-transition: all 0.2s ease-in;
+
+  --artificia-blue: #93f7eb;
+  --artificia-black: #0d0d0d;
+  --artificia-blue-dark: #4cb9ad;
+  --artificia-blue-text-glow: 0px 4px 5px rgb(145, 255, 255);
+  --artificia-gradient: linear-gradient(to bottom right, #323232, #0d0d0d);
+  --artificia-gradient-td: linear-gradient(#4d4d4d, #161616, #141414, #0d0d0d);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px; 10px / 16px (browser default) = 62.5%
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-gray-dark-1);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
