@@ -32,8 +32,9 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="sass/main.css" />
+
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
     <script
@@ -44,6 +45,7 @@
     <title>KoiDev Games</title>
   </head>
   <body>
+    <!-- <div class="top-border"></div> -->
     <nav class="nav">
       <div class="nav__container">
         <div class="nav__container--left">
@@ -62,6 +64,16 @@
       </div>
     </nav>
     <header class="header-artificia" id="place">
+      <div class="banner-box">
+        <div class="header-banner"><img src="img/artbanner.png" /></div>
+        <div class="header-text">
+          Mensonia City, Myvia. A distant country in a distant future.<br /><br />
+          A crisis emerges when bots begin to turn against their owners in
+          random acts of terrorism.<br /><br />You are Luna Ashfall, daughter of
+          the inventor of bots.<br /><br />What will you do to save the
+          government and bots?
+        </div>
+      </div>
       <div class="box fore-box">
         <div class="img fore"></div>
       </div>
@@ -70,60 +82,197 @@
       </div>
     </header>
 
-    <section class="section-landing">
-      <h2 class="title-padding-fix">
-        Explore&nbsp;&nbsp;&nbsp; a&nbsp;&nbsp;&nbsp; new&nbsp;&nbsp;&nbsp;
-        world
-      </h2>
-
-      <div class="meow">
-        <div class="div1 p image1"></div>
-        <div class="div2 p sectText">
-          <h3 class="sectionHeaders">Luna Ashfall</h3>
-          You are Luna Ashfall, the pink-haired, industrious daughter of the
-          lead engineer of bots, Orvis Ashfall. Your father was just arrested
-          for suspicion of treason for implanting a bug within robots that
-          allowed them to rebel. How will you save your father and prevent a
-          disaster from happening between the robots and your government?
+    <div class="background-gradient">
+      <section class="section-suitors">
+        <h2 class="section-title">
+          Meet &nbsp;&nbsp;&nbsp;the &nbsp;&nbsp;&nbsp;Suitors
+        </h2>
+        <h3 class="section-subtitle">
+          Each with unique stories and personalities.<br />Learn who they are,
+          influence their choices, and maybe they'll start to feel something
+          special towards you, too.
+        </h3>
+        <div id="section-suitors-tag"></div>
+        <div class="suitors-row-back">
+          <div class="zane" id="zane">
+            <img src="/img/zane.png" />
+          </div>
+          <div class="petra" id="petra">
+            <img src="/img/petra.png" />
+          </div>
+          <div class="tom" id="tom">
+            <img src="/img/tom.png" />
+          </div>
+          <div class="elina" id="elina">
+            <img src="/img/elina.png" />
+          </div>
         </div>
-        <div class="div3 p"></div>
-      </div>
-
-      <div class="meow">
-        <div class="div1 p"></div>
-        <div class="div2 p sectText">
-          <h3 class="sectionHeaders">Mensonia City</h3>
-          Set in the cyberpunk, near-future dystopian world of Myvia, in the
-          city of Mensonia. With a powerful government that controls the means
-          of production of robots, called ‘bots’, that back every aspect of
-          everyday life, the story unwinds when robots begin to defect against
-          their human owners.
+        <div class="suitors-row-front">
+          <div class="nemo sf" id="nemo">
+            <img src="/img/nemo.png" />
+          </div>
+          <div class="stercus sf" id="stercus">
+            <img src="/img/stercus.png" />
+          </div>
+          <div class="ilis sf" id="ilis">
+            <img src="/img/ilis.png" />
+          </div>
+          <div class="heis sf" id="heis">
+            <img src="/img/heis.png" />
+          </div>
         </div>
-        <div class="div3 p image2"></div>
-      </div>
-
-      <div class="meow">
-        <div class="div1 p image3"></div>
-        <div class="div2 p sectText">
-          <h3 class="sectionHeaders">Combine Love and Story</h3>
-          Artificia is a visual novel game that includes dating sim elements and
-          branching storylines, both of which will lead the player to one of
-          over 40 endings. Featuring authentic characters and writing,
-          soundscapes that will bring you into every environment, and lovingly
-          crafted pixel art graphics, Artificia is KoiDev’s first video game!
-        </div>
-        <div class="div3 p"></div>
-      </div>
-
-      <!-- Has to be here to continue the same gradient -->
-      <section class="section-brooch">
-        <div class="brooch-container">
-          <h1 class="brooch-title">What is Myvia Hiding?</h1>
-        </div>
-        <canvas class="webgl"></canvas>
-        <section class="brooch-space"></section>
       </section>
-    </section>
+
+      <section class="section-luna">
+        <h2 class="section-title">
+          Meet &nbsp;&nbsp;&nbsp;Luna &nbsp;&nbsp;&nbsp;Ashfall
+        </h2>
+        <h3 class="section-subtitle">
+          The main character behind your story.<br />The carefree art student
+          turned potential felon's accomplice.
+        </h3>
+
+        <div class="lunagridcontainer">
+          <div class="luna-description">
+            <div class="luna-description__text">
+              Raised by her father, Orvis Ashfall, in the Myvian Cynosure, Luna
+              lived an ordinary, human life--until she received a message that
+              her father was arrested, with an expected sentence of execution.
+            </div>
+            <div class="luna-description__text">
+              Navigate her story, build relationships with bots as you decide
+              how to navigate the rebels and the government, and grow close with
+              a bot.
+            </div>
+            <div class="luna-description__text">
+              You'll fall in love with her quirky nature.
+            </div>
+          </div>
+          <div class="lunatallcontainer">
+            <img class="lunaimage full1" src="/img/lunafullboth.png" />
+          </div>
+          <div class="lunasubcontainer">
+            <div class="lunaprofilecontainer">
+              <img class="lunaimage" src="/img/lunaface1.png" />
+            </div>
+            <div class="lunaprofilecontainer">
+              <img class="lunaimage" src="/img/lunaface2.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-landing">
+        <h2 class="section-title">
+          Explore&nbsp;&nbsp;&nbsp; a&nbsp;&nbsp;&nbsp; new&nbsp;&nbsp;&nbsp;
+          world
+        </h2>
+
+        <div class="meow">
+          <div class="div1 p image1"></div>
+          <div class="div2 p sectText">
+            <h3 class="sectionHeaders">Luna Ashfall</h3>
+            You are Luna Ashfall, the pink-haired, industrious daughter of the
+            lead engineer of bots, Orvis Ashfall. Your father was just arrested
+            for suspicion of treason for implanting a bug within robots that
+            allowed them to rebel. How will you save your father and prevent a
+            disaster from happening between the robots and your government?
+          </div>
+          <div class="div3 p"></div>
+        </div>
+
+        <div class="meow">
+          <div class="div1 p"></div>
+          <div class="div2 p sectText">
+            <h3 class="sectionHeaders">Mensonia City</h3>
+            Set in the cyberpunk, near-future dystopian world of Myvia, in the
+            city of Mensonia. With a powerful government that controls the means
+            of production of robots, called ‘bots’, that back every aspect of
+            everyday life, the story unwinds when robots begin to defect against
+            their human owners.
+          </div>
+          <div class="div3 p image2"></div>
+        </div>
+
+        <div class="meow">
+          <div class="div1 p image3"></div>
+          <div class="div2 p sectText">
+            <h3 class="sectionHeaders">Combine Love and Story</h3>
+            Artificia is a visual novel game that includes dating sim elements
+            and branching storylines, both of which will lead the player to one
+            of over 40 endings. Featuring authentic characters and writing,
+            soundscapes that will bring you into every environment, and lovingly
+            crafted pixel art graphics, Artificia is KoiDev’s first video game!
+          </div>
+          <div class="div3 p"></div>
+        </div>
+      </section>
+
+      <section class="section-technical">
+        <h2 class="section-title">
+          Unique&nbsp;&nbsp;&nbsp;Game&nbsp;&nbsp;&nbsp;
+          Mechanics&nbsp;&nbsp;&nbsp;
+        </h2>
+        <h3 class="section-subtitle">
+          Over 40 endings. 5 main chapters. Side Stories to learn more about
+          each suitor.
+        </h3>
+        <div class="section-technical__container">
+          <div class="carousel-container">
+            <!-- Images -->
+            <div class="tech-img-container">
+              <img class="technical-img fade" src="img/nemo_intro.gif" />
+              <img class="technical-img fade" src="img/petra_intro.gif" />
+              <img class="technical-img fade" src="img/stercus_intro.gif" />
+              <img class="technical-img fade" src="img/elina_intro.gif" />
+              <img class="technical-img fade" src="img/zane_intro.gif" />
+              <img class="technical-img fade" src="img/heis_intro.gif" />
+              <img class="technical-img fade" src="img/tom_intro.gif" />
+              <img class="technical-img fade" src="img/ilis_intro.gif" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- Dots -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-brooch">
+        <h2 class="section-title">
+          Unlock&nbsp;&nbsp;&nbsp; Myvia's&nbsp;&nbsp;&nbsp;
+          secrets&nbsp;&nbsp;&nbsp;
+        </h2>
+        <h3 class="section-subtitle">
+          What did your father really want?<br />Are bots meant to be our
+          equals?
+        </h3>
+
+        <div class="section-brooch__container">
+          <div class="brooch-text">Follow us on Twitter for Updates</div>
+          <div class="brooch-img-container">
+            <img
+              class="brooch-img"
+              alt="Luna's Brooch"
+              src="img/lunabrooch.png"
+            />
+          </div>
+          <div class="brooch-text">Try the demo- coming soon!</div>
+        </div>
+      </section>
+    </div>
 
     <footer class="footer">
       <div class="footer__copyright">
@@ -143,8 +292,9 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/test.js"></script>
     <script src="js/three.js"></script>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
   </body>
 </html>

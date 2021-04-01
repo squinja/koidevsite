@@ -39,14 +39,19 @@ Grey dark 3: #999
   --color-gray-dark-3: #333;
   --color-gray-dark-4: #222;
 
-  --nav-transition: all 0.2s ease-in;
+  --nav-transition: all 0.2s;
 
   --artificia-blue: #93f7eb;
   --artificia-black: #0d0d0d;
   --artificia-blue-dark: #4cb9ad;
   --artificia-blue-text-glow: 0px 4px 5px rgb(145, 255, 255);
   --artificia-gradient: linear-gradient(to bottom right, #323232, #0d0d0d);
-  --artificia-gradient-td: linear-gradient(#4d4d4d, #161616, #141414, #0d0d0d);
+  --artificia-gradient-td: linear-gradient(
+    #4d4d4d 0%,
+    #161616 25%,
+    #141414 80%,
+    #0d0d0d 100%
+  );
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }

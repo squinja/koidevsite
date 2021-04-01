@@ -2,6 +2,13 @@
 
 //NAVBAR
 
+// .top-border {
+//   border-top: 5px solid var(--color-primary);
+//   position: sticky;
+//   top: 0;
+//   z-index: 1010;
+// }
+
 .nav {
   background-color: rgb(255, 255, 255);
   z-index: 1000;
@@ -155,7 +162,16 @@
 
 // /////////////////////////////////////////////////////////////
 
-//Artificia
+//BACKGROUND GRADIENT
+.background-gradient {
+  // background-color: #000;s
+  background-image: var(--artificia-gradient-td);
+  // height: 2000px;
+}
+
+// /////////////////////////////////////////////////////////////
+
+//SECTION-ARTIFICIA
 
 .section-artificia {
   display: flex;
@@ -524,6 +540,37 @@
   height: 100vh;
 }
 
+.header-banner {
+  margin-top: 4rem;
+}
+
+.banner-box {
+  left: 60%;
+  top: 30%;
+  position: absolute;
+  z-index: 120;
+
+  height: 450px;
+  max-width: 500px;
+
+  background-image: var(--artificia-gradient);
+  box-shadow: inset 5px 8px 10px #000;
+  border-radius: 15px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-evenly;
+}
+
+.header-text {
+  margin: 0 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-gray-light-4);
+  font-family: "aldrich", sans-serif;
+}
+
 .box {
   position: absolute;
   perspective: 400px;
@@ -584,11 +631,136 @@
   }
 }
 
-// Artificia landing page tests
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+//SECTION--SUITORS
 
-.title-padding-fix {
-  padding-top: 5rem;
+.section-suitors {
+  // background-color: var(--artificia-black);
+  border-top: 5px solid var(--artificia-blue-dark);
+  border-bottom: 5px solid var(--artificia-blue);
 }
+
+.section-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-family: "aldrich", sans-serif;
+  color: var(--color-gray-light-4);
+}
+
+.suitors-row-back {
+  display: flex;
+  justify-content: space-evenly;
+  height: 483px;
+  transform: translateY(12%);
+
+  position: relative;
+  z-index: 100;
+
+  border-bottom: 3px solid var(--artificia-blue-dark);
+}
+
+.suitors-row-front {
+  // background-color: #93f7eb;
+  height: 480px;
+  margin-top: -25vh;
+  justify-content: center;
+  display: flex;
+
+  position: relative;
+  z-index: 105;
+}
+
+.sf {
+  margin-left: -15px;
+}
+
+// Individual suitors movements and positioning is located in @suitors.scss
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+// SECTION--LUNA
+
+.section-luna {
+  // height: 100vh;
+}
+
+.lunagridcontainer {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+
+.lunatallcontainer {
+  height: 650px;
+  grid-area: 1 / 2 / span 2 / span 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lunasubcontainer {
+  grid-area: 1 / 3 / span 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5rem;
+}
+
+.luna-description {
+  grid-area: 1 / 1 / span 2 / span 1;
+  font-size: 2rem;
+  font-family: "aldrich", sans-serif;
+
+  margin: 4rem 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "Tossed into political and legal turmoil";
+    font-size: 2.5rem;
+    color: var(--artificia-blue-dark);
+  }
+
+  &__text {
+    margin: 1.5rem auto;
+  }
+}
+
+.lunaprofilecontainer {
+  height: 200px;
+  position: relative;
+
+  &:last-child::after {
+    content: "In-Game Profile View";
+
+    color: var(--artificia-blue);
+    font-family: "aldrich", sans-serif;
+    font-size: 1.5rem;
+
+    position: absolute;
+
+    top: 200px;
+    left: 20px;
+  }
+}
+
+.lunaimage {
+  height: 100%;
+  border-bottom: 1px solid var(--artificia-blue);
+}
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+// SECTION--LANDING
 
 .landing-container {
   background-color: transparent;
@@ -598,10 +770,11 @@
   justify-content: center;
 }
 
-.landing-title {
-  color: var(--artificia-blue-dark);
+.section-title {
+  padding-top: 5rem;
+  color: var(--artificia-blue);
   text-shadow: var(--artificia-blue-text-glow);
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "ultraregular", sans-serif;
@@ -620,18 +793,7 @@
 }
 
 .section-landing {
-  h2 {
-    color: var(--artificia-blue);
-    text-shadow: var(--artificia-blue-text-glow);
-    font-size: 5rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "ultraregular", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  background-image: var(--artificia-gradient-td);
+  // background-image: var(--artificia-gradient-td);
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -639,7 +801,7 @@
 
 .meow {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 0px;
@@ -664,6 +826,7 @@
 .image1 {
   background-image: url("../img/bg_apartment21.png");
   background-size: cover;
+  overflow: visible;
 }
 
 .image2 {
@@ -686,15 +849,140 @@
 }
 
 .div1 {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / span 1 / span 2;
 }
 .div2 {
-  grid-area: 1 / 3 / 2 / 4;
+  grid-area: 1 / 3 / span 1 / span 2;
 }
 .div3 {
   grid-area: 1 / 4 / 2 / 6;
 }
 
+.section-technical {
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-img-container {
+  margin-top: 4rem;
+  padding-bottom: 10rem;
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+.technical-img {
+  height: 100%;
+  border: 3px solid var(--color-primary);
+  border-radius: 3rem;
+  box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50px;
+  padding: 1rem;
+  top: 50%;
+  transition: 0.4s ease;
+  border-radius: 1rem 0 0 1rem;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* The dots underneath slideshow */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 2rem 1.25rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .section-brooch {
   // background-color: var(--artificia-black);
+  // height: 100vh;
+  // position: relative;
+
+  &__container {
+    margin-top: 4rem;
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.brooch-text {
+  font-size: 2rem;
+  font-family: "aldrich", sans-serif;
+
+  margin: 4rem 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brooch-img-container {
+  height: 600px;
+}
+
+.brooch-img {
+  height: 100%;
 }

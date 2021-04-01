@@ -34,13 +34,18 @@ Grey dark 3: #999
   --color-gray-dark-2: #777;
   --color-gray-dark-3: #333;
   --color-gray-dark-4: #222;
-  --nav-transition: all 0.2s ease-in;
+  --nav-transition: all 0.2s;
   --artificia-blue: #93f7eb;
   --artificia-black: #0d0d0d;
   --artificia-blue-dark: #4cb9ad;
   --artificia-blue-text-glow: 0px 4px 5px rgb(145, 255, 255);
   --artificia-gradient: linear-gradient(to bottom right, #323232, #0d0d0d);
-  --artificia-gradient-td: linear-gradient(#4d4d4d, #161616, #141414, #0d0d0d);
+  --artificia-gradient-td: linear-gradient(
+    #4d4d4d 0%,
+    #161616 25%,
+    #141414 80%,
+    #0d0d0d 100%
+  );
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
@@ -233,6 +238,10 @@ body {
 
 .header__body {
   font-size: 3rem;
+}
+
+.background-gradient {
+  background-image: var(--artificia-gradient-td);
 }
 
 .section-artificia {
@@ -636,6 +645,41 @@ body {
   height: 100vh;
 }
 
+.header-banner {
+  margin-top: 4rem;
+}
+
+.banner-box {
+  left: 60%;
+  top: 30%;
+  position: absolute;
+  z-index: 120;
+  height: 450px;
+  max-width: 500px;
+  background-image: var(--artificia-gradient);
+  -webkit-box-shadow: inset 5px 8px 10px #000;
+          box-shadow: inset 5px 8px 10px #000;
+  border-radius: 15px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-text {
+  margin: 0 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-gray-light-4);
+  font-family: "aldrich", sans-serif;
+}
+
 .box {
   position: absolute;
   -webkit-perspective: 400px;
@@ -694,8 +738,145 @@ body {
   -webkit-filter: blur(4px);
 }
 
-.title-padding-fix {
-  padding-top: 5rem;
+.section-suitors {
+  border-top: 5px solid var(--artificia-blue-dark);
+  border-bottom: 5px solid var(--artificia-blue);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-family: "aldrich", sans-serif;
+  color: var(--color-gray-light-4);
+}
+
+.suitors-row-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 483px;
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid var(--artificia-blue-dark);
+}
+
+.suitors-row-front {
+  height: 480px;
+  margin-top: -25vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 105;
+}
+
+.sf {
+  margin-left: -15px;
+}
+
+.lunagridcontainer {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+
+.lunatallcontainer {
+  height: 650px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / span 2 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lunasubcontainer {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 3 / span 1 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 5rem;
+}
+
+.luna-description {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / span 2 / span 1;
+  font-size: 2rem;
+  font-family: "aldrich", sans-serif;
+  margin: 4rem 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.luna-description::before {
+  content: "Tossed into political and legal turmoil";
+  font-size: 2.5rem;
+  color: var(--artificia-blue-dark);
+}
+
+.luna-description__text {
+  margin: 1.5rem auto;
+}
+
+.lunaprofilecontainer {
+  height: 200px;
+  position: relative;
+}
+
+.lunaprofilecontainer:last-child::after {
+  content: "In-Game Profile View";
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+.lunaimage {
+  height: 100%;
+  border-bottom: 1px solid var(--artificia-blue);
 }
 
 .landing-container {
@@ -713,10 +894,11 @@ body {
           justify-content: center;
 }
 
-.landing-title {
-  color: var(--artificia-blue-dark);
+.section-title {
+  padding-top: 5rem;
+  color: var(--artificia-blue);
   text-shadow: var(--artificia-blue-text-glow);
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "ultraregular", sans-serif;
@@ -734,28 +916,16 @@ body {
 }
 
 .section-landing {
-  background-image: var(--artificia-gradient-td);
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.section-landing h2 {
-  color: var(--artificia-blue);
-  text-shadow: var(--artificia-blue-text-glow);
-  font-size: 5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "ultraregular", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-
 .meow {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-column-gap: 15px;
@@ -779,6 +949,7 @@ body {
 .image1 {
   background-image: url("../img/bg_apartment21.png");
   background-size: cover;
+  overflow: visible;
 }
 
 .image2 {
@@ -809,15 +980,15 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / span 1 / span 2;
 }
 
 .div2 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 3 / 2 / 4;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 3 / span 1 / span 2;
 }
 
 .div3 {
@@ -826,6 +997,154 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 1 / 4 / 2 / 6;
+}
+
+.section-technical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech-img-container {
+  margin-top: 4rem;
+  padding-bottom: 10rem;
+  width: 65vw;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technical-img {
+  height: 100%;
+  border: 3px solid var(--color-primary);
+  border-radius: 3rem;
+  -webkit-box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50px;
+  padding: 1rem;
+  top: 50%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border-radius: 1rem 0 0 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* The dots underneath slideshow */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 2rem 1.25rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-brooch__container {
+  margin-top: 4rem;
+  padding-bottom: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brooch-text {
+  font-size: 2rem;
+  font-family: "aldrich", sans-serif;
+  margin: 4rem 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brooch-img-container {
+  height: 600px;
+}
+
+.brooch-img {
+  height: 100%;
 }
 
 /* iPads to computers */
@@ -1069,159 +1388,337 @@ body {
   }
 }
 
-.item1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
-  background-image: url("../img/bg_apartment21.png");
-  background-size: contain;
+.nemo {
+  -webkit-transform: translateX(800%);
+          transform: translateX(800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 
-.item2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.item3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 3 / 2 / 4;
-}
-
-.item4 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 4 / 2 / 5;
-}
-
-.item5 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 1 / 3 / 2;
-  background-image: url("../img/cit.png");
-}
-
-.item6 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.item7 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.item8 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 4 / 3 / 5;
-}
-
-.item9 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.item10 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-.item11 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 3 / 4 / 4;
-}
-
-.item12 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 4 / 4 / 5;
-}
-
-.item13 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.item14 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-.item15 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 3 / 5 / 4;
-}
-
-.item16 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-area: 4 / 4 / 5 / 5;
-}
-
-.webgl {
+.nemo:before {
+  content: "Nemo,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  outline: none;
-  mix-blend-mode: exclusion;
+  top: -10px;
+  left: 105px;
 }
 
-.brooch-container {
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+.nemo:after {
+  content: "\AThe Brash Rebel Leader";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 55px;
 }
 
-.brooch-title {
-  font-size: 8rem;
-  text-transform: uppercase;
-  color: white;
+.zane {
+  -webkit-transform: translateX(800%);
+          transform: translateX(800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+  position: relative;
 }
 
-.brooch-space {
-  height: 100vh;
+.zane:before {
+  content: "Zane,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #cf4545;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: -50px;
+  left: 120px;
+}
+
+.zane:after {
+  content: "\AThe Quiet Rebel Operative";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -40px;
+  left: 55px;
+}
+
+.petra {
+  -webkit-transform: translateX(800%);
+          transform: translateX(800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  position: relative;
+}
+
+.petra:before {
+  content: "Petra,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #9c43d8;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+.petra:after {
+  content: "\AThe Sly Rebel Stealth Agent";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.stercus {
+  -webkit-transform: translateX(800%);
+          transform: translateX(800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+}
+
+.stercus:before {
+  content: "Stercus,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #d89c43;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: -10px;
+  left: 95px;
+}
+
+.stercus:after {
+  content: "\A The Dysfunctional Shopkeeper";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+
+.ilis {
+  -webkit-transform: translateX(-800%);
+          transform: translateX(-800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.ilis:before {
+  content: "Ilis,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #4352d8;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: -10px;
+  left: 120px;
+}
+
+.ilis:after {
+  content: "\A The Two-Faced Mystery";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+
+.tom {
+  -webkit-transform: translateX(-800%);
+          transform: translateX(-800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+  position: relative;
+}
+
+.tom:before {
+  content: "Tom,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #7063e4;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: -10px;
+  left: 110px;
+}
+
+.tom:after {
+  content: "\A The Musing Librarian";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 60px;
+}
+
+.elina {
+  -webkit-transform: translateX(-800%);
+          transform: translateX(-800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  position: relative;
+}
+
+.elina:before {
+  content: "Elina,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #77da64;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: 10px;
+  left: 105px;
+}
+
+.elina:after {
+  content: "\A The Charming Ambassador";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+.heis {
+  -webkit-transform: translateX(-800%);
+          transform: translateX(-800%);
+  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.heis:before {
+  content: "Heis,";
+  background-color: var(--artificia-black);
+  padding: 0 1rem;
+  border-radius: 1rem;
+  z-index: 120;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #32c3ce;
+  font-family: "aldrich", sans-serif;
+  font-size: 2.25rem;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
+.heis:after {
+  content: "\A The Stern Military Commander";
+  background-color: var(--artificia-black);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  z-index: 115;
+  white-space: pre-wrap;
+  text-align: center;
+  color: var(--artificia-blue);
+  font-family: "aldrich", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0px;
+  left: 20px;
 }
 /*# sourceMappingURL=main.css.map */
