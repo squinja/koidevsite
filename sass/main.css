@@ -89,7 +89,7 @@ body {
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-bottom: 1.5px solid var(--color-primary);
-  height: 100px;
+  height: 110px;
   -webkit-transition: var(--nav-transition);
   transition: var(--nav-transition);
   -webkit-transform: translateY(0%);
@@ -109,7 +109,7 @@ body {
   -webkit-transition: var(--nav-transition);
   transition: var(--nav-transition);
   height: 10rem;
-  margin: 0rem 0rem;
+  margin: 0;
 }
 
 .nav__container {
@@ -143,13 +143,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 50px;
 }
 
 .nav__t {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 50px;
 }
 
 .nav__item {
@@ -1121,12 +1127,13 @@ body {
 }
 
 .section-brooch {
-  min-height: 600px;
+  height: auto;
+  width: 100%;
+  padding-bottom: 7rem;
 }
 
 .section-brooch__container {
   margin-top: 4rem;
-  padding-bottom: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,7 +1148,7 @@ body {
   font-size: 2rem;
   font-family: "aldrich", sans-serif;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1167,11 +1174,19 @@ body {
 }
 
 .brooch-img-container {
-  height: 700px;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .brooch-img {
-  height: 100%;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 .section-about {
@@ -1179,6 +1194,10 @@ body {
   margin: 5rem 12rem;
   padding: 1rem 3rem;
   border-radius: 3rem;
+}
+
+.about-description {
+  margin: auto;
 }
 
 .navbar--shrink {
@@ -1652,6 +1671,13 @@ body {
   left: 20px;
 }
 
+@media only screen and (max-width: 1777px) {
+  .section-us__container2 {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .luna-description {
     margin: 4rem 2rem;
@@ -1659,6 +1685,12 @@ body {
 }
 
 @media only screen and (max-width: 1450px) {
+  .section-social__item {
+    margin: 0 2rem;
+  }
+  .brooch-text {
+    padding: 1rem;
+  }
   .imagebase {
     height: 425px;
   }
@@ -1668,21 +1700,42 @@ body {
   }
 }
 
+@media only screen and (max-width: 1406px) {
+  .section-us__container2 {
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
 /* iPads to computers */
 @media only screen and (max-width: 1200px) {
+  .nav__item {
+    font-size: 1.7rem;
+  }
+  .nav__item:last-child {
+    min-width: 86px;
+  }
   .meow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 2rem 1rem;
     height: 1000px;
   }
+  .column-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .imagebase {
-    height: 600px;
+    height: 700px;
     margin: 3rem auto;
   }
   .imagebase img {
@@ -1756,6 +1809,21 @@ body {
 /* iPads: small tablet to big tablet held vertically  */
 /* From 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+  .nav__item {
+    margin-right: 0;
+  }
+  .nav__item:last-child {
+    min-width: 75px;
+  }
+  .section-us__profiles {
+    margin-bottom: 20rem;
+  }
+  .meow {
+    height: 800px;
+  }
+  .imagebase {
+    height: 550px;
+  }
   .tech-img-container {
     margin-top: 4rem;
     height: 350px;
@@ -1881,6 +1949,12 @@ body {
 
 /* Small phones to small tablets: from 481 to (originally-- changed 3.24.21) 767px */
 @media only screen and (max-width: 860px) {
+  .section-landing .sectionHeaders {
+    font-size: 2.25rem;
+  }
+  .brooch-text {
+    font-size: 1.75rem;
+  }
   .header-artificia {
     height: 800px;
   }
@@ -1983,12 +2057,18 @@ body {
 }
 
 @media only screen and (max-width: 685px) {
+  .section-about {
+    margin: 3rem 1rem;
+  }
   .nav__title {
     font-size: 3rem;
     line-height: 3rem;
   }
   .nav__container {
     margin-left: 1rem;
+  }
+  .meow {
+    height: 600px;
   }
   .banner-box {
     left: 10%;
@@ -2104,6 +2184,10 @@ body {
 }
 
 @media only screen and (max-width: 620px) {
+  .brooch-text {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
   .tech-img-container {
     height: 300px;
   }
@@ -2127,6 +2211,12 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
+  .sectionHeaders {
+    font-size: 2.5rem;
+  }
+  .sectText {
+    font-size: 1.8rem;
+  }
   .tech-img-container {
     height: 200px;
   }
@@ -2290,6 +2380,23 @@ body {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 420px) {
+  .nav__item {
+    margin-right: 0;
+    font-size: 1.7rem;
+  }
+  .nav__item:last-child {
+    min-width: 73px;
+    margin-right: 1rem;
+  }
+  .section-us__container2 {
+    font-size: 1.75rem;
+    -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .sectText {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
   .section-title {
     font-size: 3.5rem;
   }

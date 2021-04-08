@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1777px) {
+  .section-us {
+    &__container2 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .luna-description {
     margin: 4rem 2rem;
@@ -5,6 +13,13 @@
 }
 
 @media only screen and (max-width: 1450px) {
+  .section-social__item {
+    margin: 0 2rem;
+  }
+  .brooch-text {
+    padding: 1rem;
+  }
+
   .imagebase {
     height: 425px;
 
@@ -15,19 +30,41 @@
   }
 }
 
+@media only screen and (max-width: 1406px) {
+  .section-us {
+    &__container2 {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+  }
+}
+
 /* iPads to computers */
 @media only screen and (max-width: 1200px) {
+  // NAV BAR
+  .nav__item {
+    font-size: 1.7rem;
+
+    &:last-child {
+      min-width: 86px;
+    }
+  }
+  // NAV BAR
   // ARTIFICIA.HTML
 
   .meow {
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin: 2rem 1rem;
     height: 1000px;
   }
 
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+
   .imagebase {
-    height: 600px;
+    height: 700px;
     margin: 3rem auto;
 
     img {
@@ -103,7 +140,29 @@
 /* iPads: small tablet to big tablet held vertically  */
 /* From 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+  // NAV BAR
+  .nav__item {
+    margin-right: 0;
+    &:last-child {
+      min-width: 75px;
+    }
+  }
+  // NAV BAR
+
+  // ABOUT.HTML
+  .section-us__profiles {
+    margin-bottom: 20rem;
+  }
+  // ABOUT.HTML
   // ARTIFICIA.HTML
+
+  .meow {
+    height: 800px;
+  }
+
+  .imagebase {
+    height: 550px;
+  }
 
   .tech-img-container {
     margin-top: 4rem;
@@ -287,6 +346,21 @@
 /* Small phones to small tablets: from 481 to (originally-- changed 3.24.21) 767px */
 @media only screen and (max-width: 860px) {
   // ARTIFICIA.HTML
+
+  // .meow {
+  //   height: 725px;
+  // }
+
+  .section-landing {
+    .sectionHeaders {
+      font-size: 2.25rem;
+    }
+  }
+
+  .brooch-text {
+    font-size: 1.75rem;
+  }
+
   .header-artificia {
     height: 800px;
   }
@@ -396,6 +470,13 @@
 // ARTIFICIA.HTML
 
 @media only screen and (max-width: 685px) {
+  // ABOUT.HTML
+
+  .section-about {
+    margin: 3rem 1rem;
+  }
+
+  // INDEX.HTML
   .nav__title {
     font-size: 3rem;
     line-height: 3rem;
@@ -404,7 +485,12 @@
   .nav__container {
     margin-left: 1rem;
   }
+
   // ARTIFICIA.HTML
+
+  .meow {
+    height: 600px;
+  }
 
   .banner-box {
     left: 10%;
@@ -579,6 +665,11 @@
 }
 
 @media only screen and (max-width: 620px) {
+  .brooch-text {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
   .tech-img-container {
     height: 300px;
   }
@@ -610,6 +701,15 @@
 
 @media only screen and (max-width: 540px) {
   // ARTIFICIA.HTML
+
+  .sectionHeaders {
+    font-size: 2.5rem;
+  }
+
+  .sectText {
+    font-size: 1.8rem;
+  }
+
   .tech-img-container {
     height: 200px;
   }
@@ -845,7 +945,28 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 420px) {
+  // NAV BAR
+  .nav__item {
+    margin-right: 0;
+    font-size: 1.7rem;
+    &:last-child {
+      min-width: 73px;
+      margin-right: 1rem;
+    }
+  }
+  // NAV BAR
+
+  // ABOUT.HTML
+  .section-us__container2 {
+    font-size: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  // ABOUT.HTML
   // artificia.html
+
+  .sectText {
+    transform: translateY(-10%);
+  }
 
   .section-title {
     font-size: 3.5rem;
