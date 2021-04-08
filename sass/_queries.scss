@@ -1,5 +1,93 @@
+@media only screen and (max-width: 1600px) {
+  .luna-description {
+    margin: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .imagebase {
+    height: 425px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 /* iPads to computers */
 @media only screen and (max-width: 1200px) {
+  // ARTIFICIA.HTML
+
+  .meow {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+    height: 1000px;
+  }
+
+  .imagebase {
+    height: 600px;
+    margin: 3rem auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .tech-img-container {
+    margin-top: 4rem;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-box {
+    left: 2%;
+    top: 20%;
+    position: absolute;
+    z-index: 120;
+
+    height: 450px;
+    max-width: 500px;
+
+    background-image: var(--artificia-gradient);
+    box-shadow: inset 5px 8px 10px #000;
+    border-radius: 15px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-evenly;
+  }
+
+  .header-text {
+    margin: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-gray-light-4);
+    font-family: "aldrich", sans-serif;
+  }
+
+  .suitorimage {
+    margin: 0 -3rem;
+  }
+
+  .full1 {
+    display: none;
+  }
+
+  .lunagridcontainer {
+    grid-template-rows: 1fr 10px;
+  }
+
+  .luna-description {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  // ARTIFICIA.HTML
+
+  // INDEX.HTML
   .header {
     &__title {
       font-size: 6rem;
@@ -9,11 +97,181 @@
       font-size: 3rem;
     }
   }
+  // INDEX.HTML
 }
 
 /* iPads: small tablet to big tablet held vertically  */
 /* From 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+  // ARTIFICIA.HTML
+
+  .tech-img-container {
+    margin-top: 4rem;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .prev,
+  .next {
+    top: 40%;
+    color: aliceblue;
+  }
+
+  .next {
+    right: -2%;
+  }
+
+  .suitorimage {
+    height: 300px;
+    margin: 0;
+  }
+
+  .suitors-row-back {
+    height: 300px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .suitors-row-front {
+    height: 300px;
+    margin-top: -10vh;
+    img {
+      height: 100%;
+    }
+  }
+
+  .nemo {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 65px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 40px;
+    }
+  }
+
+  .zane {
+    &::before {
+      font-size: 2rem;
+
+      top: -30px;
+      left: 65px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -15px;
+      left: 30px;
+    }
+  }
+
+  .stercus {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 55px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 20px;
+    }
+  }
+
+  .petra {
+    &::before {
+      font-size: 2rem;
+
+      top: 10px;
+      left: 60px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 25px;
+      left: 25px;
+    }
+  }
+
+  .ilis {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 65px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 15px;
+    }
+  }
+
+  .tom {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 65px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 40px;
+    }
+  }
+
+  .heis {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 60px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 10px;
+    }
+  }
+
+  .elina {
+    &::before {
+      font-size: 2rem;
+
+      top: -10px;
+      left: 60px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 5px;
+      left: 20px;
+    }
+  }
+  // ARTIFICIA.HTML
+
+  // INDEX.HTML
   .header {
     &__title {
       font-size: 5rem;
@@ -23,10 +281,58 @@
       font-size: 2.75rem;
     }
   }
+  // INDEX.HTML
 }
 
 /* Small phones to small tablets: from 481 to (originally-- changed 3.24.21) 767px */
 @media only screen and (max-width: 860px) {
+  // ARTIFICIA.HTML
+  .header-artificia {
+    height: 800px;
+  }
+
+  .img {
+    position: absolute;
+    top: 0;
+    // left: -200px;
+    width: 100vw;
+    height: 100vh;
+    transition: all 5s;
+  }
+
+  .fore {
+    display: none;
+  }
+
+  .box {
+    position: absolute;
+    perspective: 400px;
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: perspective 5s;
+  }
+
+  .banner-box {
+    left: 20%;
+    top: 20%;
+
+    height: 600px;
+    max-width: 500px;
+  }
+
+  .header-text {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+    margin: 3rem 2rem;
+  }
+  // ARTIFICIA.HTML
+
+  // INDEX.HTML
   .header {
     &__title {
       font-size: 4rem;
@@ -37,9 +343,227 @@
       line-height: 3rem;
     }
   }
+  // INDEX.HTML
 }
 
+@media only screen and (max-width: 750px) {
+  // ARTIFICIA.HTML
+
+  .banner-box {
+    left: 14%;
+    top: 20%;
+
+    height: 600px;
+    max-width: 500px;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .lunagridcontainer {
+    grid-template-rows: 1fr 250px;
+  }
+
+  .luna-description {
+    grid-area: 1 / 1 / 2 / 4;
+
+    &::before {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
+
+  .suitorimage {
+    margin: 0 -1rem;
+  }
+
+  .lunasubcontainer {
+    grid-area: 2 / 1 / 3 / 4;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+}
+// ARTIFICIA.HTML
+
 @media only screen and (max-width: 685px) {
+  .nav__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .nav__container {
+    margin-left: 1rem;
+  }
+  // ARTIFICIA.HTML
+
+  .banner-box {
+    left: 10%;
+    top: 20%;
+
+    height: 600px;
+    max-width: 500px;
+  }
+
+  .suitorimage {
+    height: 200px;
+    margin: 0;
+  }
+
+  .suitors-row-back {
+    height: 200px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .suitors-row-front {
+    height: 200px;
+    margin-top: 0vh;
+    img {
+      height: 100%;
+    }
+  }
+
+  .nemo {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -25px;
+      left: 25px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -15px;
+      left: -5px;
+    }
+  }
+
+  .zane {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -50px;
+      left: 35px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -40px;
+      left: 5px;
+    }
+  }
+
+  .stercus {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -45px;
+      left: 20px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 10px;
+    }
+  }
+
+  .petra {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -15px;
+      left: 25px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -5px;
+      left: 0px;
+    }
+  }
+
+  .ilis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -45px;
+      left: 40px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 10px;
+    }
+  }
+
+  .tom {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -25px;
+      left: 40px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -10px;
+      left: 10px;
+    }
+  }
+
+  .heis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -35px;
+      left: 35px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -25px;
+      left: 5px;
+    }
+  }
+
+  .elina {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -30px;
+      left: 35px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -15px;
+      left: 10px;
+    }
+  }
+
+  // ARTIFICIA.HTML
+  // INDEX.HTML
   .header {
     &__title {
       font-size: 3rem;
@@ -51,9 +575,216 @@
       line-height: 2rem;
     }
   }
+  // INDEX.HTML
+}
+
+@media only screen and (max-width: 620px) {
+  .tech-img-container {
+    height: 300px;
+  }
+
+  .prev,
+  .next {
+    top: 35%;
+  }
+
+  .dot {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+  .banner-box {
+    left: 10%;
+    top: 20%;
+
+    height: 600px;
+    max-width: 400px;
+  }
+
+  .header-banner {
+    img {
+      width: 325px;
+    }
+  }
 }
 
 @media only screen and (max-width: 540px) {
+  // ARTIFICIA.HTML
+  .tech-img-container {
+    height: 200px;
+  }
+
+  .section-title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin: 0 1rem;
+    text-align: center;
+  }
+
+  .suitorimage {
+    margin: 0 -1rem;
+  }
+
+  .suitorimage {
+    height: 175px;
+    margin: 0;
+  }
+
+  .suitors-row-back {
+    height: 175px;
+    margin-top: 100px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .suitors-row-front {
+    height: 175px;
+    margin-top: 3vh;
+    img {
+      height: 100%;
+    }
+  }
+
+  .nemo {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -40px;
+      left: 22px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 19px;
+      max-width: 8rem;
+    }
+  }
+
+  .zane {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -50px;
+      left: 22px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -40px;
+      left: 8px;
+      max-width: 9.5rem;
+    }
+  }
+
+  .stercus {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -45px;
+      left: 12px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 5px;
+      max-width: 11rem;
+    }
+  }
+
+  .petra {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -20px;
+      left: 18px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -10px;
+      left: 10px;
+      max-width: 9rem;
+    }
+  }
+
+  .ilis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -45px;
+      left: 30px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 10px;
+      max-width: 9rem;
+    }
+  }
+
+  .tom {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -30px;
+      left: 30px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -20px;
+      left: 18px;
+      max-width: 8rem;
+    }
+  }
+
+  .heis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -35px;
+      left: 27px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -25px;
+      left: 3px;
+      max-width: 10.5rem;
+    }
+  }
+
+  .elina {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -30px;
+      left: 23px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -15px;
+      left: 10px;
+      max-width: 9rem;
+    }
+  }
+
+  // ARTIFICIA.HTML
+
+  // INDEX.HTML
   .nav {
     &__title {
       display: none;
@@ -78,10 +809,217 @@
       line-height: 2rem;
     }
   }
+  // INDEX.HTML
+}
+@media only screen and (max-width: 500px) {
+  .box {
+    height: 600px;
+  }
+
+  .header-artificia {
+    height: 600px;
+  }
+
+  .banner-box {
+    left: 10%;
+    top: 20%;
+
+    height: 450px;
+    max-width: 300px;
+  }
+
+  .header-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .header-text {
+    font-size: 1.25rem;
+  }
+
+  .header-banner {
+    img {
+      width: 275px;
+    }
+  }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 420px) {
+  // artificia.html
+
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .lunaprofilecontainer {
+    height: 150px;
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+
+  .suitorimage {
+    margin: 0 -1.5rem;
+    height: 175px;
+  }
+
+  .suitors-row-back {
+    height: 175px;
+    margin-top: 100px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .suitors-row-front {
+    height: 175px;
+    margin-top: 3vh;
+    img {
+      height: 100%;
+    }
+  }
+
+  .nemo {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -40px;
+      left: 25px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -30px;
+      left: 20px;
+      max-width: 8rem;
+    }
+  }
+
+  .zane {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -50px;
+      left: 28px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -40px;
+      left: 20px;
+      max-width: 9.5rem;
+    }
+  }
+
+  .stercus {
+    &::before {
+      font-size: 1.75rem;
+
+      top: 80px;
+      left: 0px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 90px;
+      left: -10px;
+      max-width: 11rem;
+    }
+  }
+
+  .petra {
+    &::before {
+      font-size: 1.75rem;
+
+      top: 90px;
+      left: 18px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 100px;
+      left: 10px;
+      max-width: 9rem;
+    }
+  }
+
+  .ilis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: 80px;
+      left: 30px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 90px;
+      left: 15px;
+      max-width: 10rem;
+    }
+  }
+
+  .tom {
+    &::before {
+      font-size: 1.75rem;
+
+      top: 90px;
+      left: 30px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: 100px;
+      left: 18px;
+      max-width: 8rem;
+    }
+  }
+
+  .heis {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -35px;
+      left: 10px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -25px;
+      left: -15px;
+      max-width: 11rem;
+    }
+  }
+
+  .elina {
+    &::before {
+      font-size: 1.75rem;
+
+      top: -30px;
+      left: 18px;
+    }
+
+    &::after {
+      font-size: 1rem;
+
+      top: -15px;
+      left: 5px;
+      max-width: 9rem;
+    }
+  }
+
+  // ARTIFICIA.HTML
+  // artificia.html
+
+  // INDEX.HTML
   .header {
     &__description {
       height: 30%;
@@ -132,4 +1070,5 @@
       display: none;
     }
   }
+  // INDEX.HTML
 }

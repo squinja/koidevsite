@@ -48,17 +48,53 @@
             </a>
         </div>
 
+        
         <ul class="nav__items">
+          <li class="nav__t">
+            <a href="index.html" class="nav__item">Home</a>
+          </li>
           <li class="nav__t">
             <a href="artificia.html" class="nav__item">Artificia</a>
           </li>
-          <li class="nav__t"><a href="#" class="nav__item">About Us</a></li>
+          <li class="nav__t">
+            <a href="about.html" class="nav__item">About Us</a>
+          </li>
         </ul>
+        
       </div>
     </nav>
     <header class="header">
-      <div class="hero-container">
-        <img class="hero" src="../img/petra_intro.gif" alt="hero" />
+      <div class="carousel-container">
+        <div class="carousel-img-container">
+        <!-- Images -->
+          <div class="tech-img-container">
+            <img class="technical-img fade" src="img/nemo_intro.gif" />
+            <img class="technical-img fade" src="img/petra_intro.gif" />
+            <img class="technical-img fade" src="img/stercus_intro.gif" />
+            <img class="technical-img fade" src="img/elina_intro.gif" />
+            <img class="technical-img fade" src="img/zane_intro.gif" />
+            <img class="technical-img fade" src="img/heis_intro.gif" />
+            <img class="technical-img fade" src="img/tom_intro.gif" />
+            <img class="technical-img fade" src="img/ilis_intro.gif" />
+          </div>
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- Dots -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
       </div>
 
       <div class="header__description">
@@ -209,5 +245,6 @@
     </footer>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
