@@ -141,11 +141,11 @@
   // ARTIFICIA.HTML
 
   .meow {
-    height: 800px;
+    height: auto;
   }
 
   .imagebase {
-    height: 550px;
+    height: auto;
   }
 
   .tech-img-container {
@@ -331,9 +331,13 @@
 @media only screen and (max-width: 860px) {
   // ARTIFICIA.HTML
 
-  // .meow {
-  //   height: 725px;
-  // }
+  .meow {
+    height: auto;
+  }
+
+  .imagebase {
+    height: auto;
+  }
 
   .section-landing {
     .sectionHeaders {
@@ -476,10 +480,6 @@
   }
 
   // ARTIFICIA.HTML
-
-  .meow {
-    height: 600px;
-  }
 
   .suitorimage {
     height: 200px;
@@ -646,6 +646,10 @@
 }
 
 @media only screen and (max-width: 620px) {
+  // ARTIFICIA.HTML
+
+  // ARTIFICIA.HTML
+
   // INDEX.HTMl
   .section-us__profiles--title2 {
     margin-left: 2rem;
@@ -685,6 +689,10 @@
 }
 
 @media only screen and (max-width: 540px) {
+  // NAVBAR
+
+  // NAVBAR
+
   // INDEX.HTML
 
   // INDEX.HTML
@@ -981,8 +989,8 @@
   // ABOUT.HTML
   // artificia.html
 
-  .sectText {
-    transform: translateY(-10%);
+  .section-brooch__container {
+    align-items: stretch;
   }
 
   .section-title {
@@ -1125,14 +1133,14 @@
       font-size: 1.75rem;
 
       top: -35px;
-      left: 10px;
+      left: 15px;
     }
 
     &::after {
       font-size: 1rem;
 
       top: -25px;
-      left: -15px;
+      left: 0px;
       max-width: 11rem;
     }
   }
@@ -1184,10 +1192,6 @@
     &__left {
       padding: 2rem;
       margin: 0 2rem;
-
-      &--title {
-        // transform: translateX(10%);
-      }
     }
 
     &__right {
@@ -1246,4 +1250,13 @@
   }
 
   // INDEX.HTML
+}
+
+@media only screen and (max-width: 360px) {
+  // FOOTER
+  .footer {
+    grid-template-columns: repeat(3, 100px);
+    grid-row-gap: 0.5rem;
+  }
+  // FOOTER
 }

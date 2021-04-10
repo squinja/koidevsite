@@ -2,8 +2,7 @@
 
 function headerShrink() {
 
-  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;;
-  // clearTimeout();
+  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   window.addEventListener(
     "scroll",
@@ -11,30 +10,23 @@ function headerShrink() {
 
       let st = window.pageYOffset || document.documentElement.scrollTop;
 
-      // setTimeout(function() {
+      let scrollTopDiff = st - lastScrollTop;
+      scrollTopDiff = Math.abs(scrollTopDiff);
 
-      if (st > lastScrollTop) {
+      console.log(scrollTopDiff);
+
+      let w = window.innerWidth;
+
+      if (st > lastScrollTop && w > 450) {
         document.querySelector('nav').style.top = "-150px";
-        // $(".nav__container").addClass("navbar--shrink__container");
-        // $(".nav__title").addClass("navbar--shrink__title");
-        // $(".nav__logo").addClass("navbar--shrink__logo");
-        // $(".nav__items").addClass("navbar--shrink__items");
-        // $(".nav__item").addClass("navbar--shrink__item");
-        
+
         
       } else {
         document.querySelector('nav').style.top = "0";
-        // $(".nav").removeClass("navbar--shrink");
-        // $(".nav__container").removeClass("navbar--shrink__container");
-        // $(".nav__title").removeClass("navbar--shrink__title");
-        // $(".nav__logo").removeClass("navbar--shrink__logo");
-        // $(".nav__items").removeClass("navbar--shrink__items");
-        // $(".nav__item").removeClass("navbar--shrink__item");
+        
         
       }
-      // }, 2000);
-
-      // lastScrollTop = st;
+      
       lastScrollTop = st <= 0 ? 0 : st;
     },
     false

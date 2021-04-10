@@ -926,6 +926,8 @@ body {
 }
 
 .section-title {
+  word-spacing: 2.5rem;
+  margin: 0 2.5rem;
   padding-top: 5rem;
   color: var(--artificia-blue);
   text-shadow: var(--artificia-blue-text-glow);
@@ -1796,10 +1798,10 @@ body {
     margin-bottom: 24rem;
   }
   .meow {
-    height: 800px;
+    height: auto;
   }
   .imagebase {
-    height: 550px;
+    height: auto;
   }
   .tech-img-container {
     margin-top: 4rem;
@@ -1926,6 +1928,12 @@ body {
 
 /* Small phones to small tablets: from 481 to (originally-- changed 3.24.21) 767px */
 @media only screen and (max-width: 860px) {
+  .meow {
+    height: auto;
+  }
+  .imagebase {
+    height: auto;
+  }
   .section-landing .sectionHeaders {
     font-size: 2.25rem;
   }
@@ -2043,9 +2051,6 @@ body {
   }
   .nav__container {
     margin-left: 1rem;
-  }
-  .meow {
-    height: 600px;
   }
   .suitorimage {
     height: 200px;
@@ -2386,9 +2391,10 @@ body {
     -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
-  .sectText {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+  .section-brooch__container {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .section-title {
     font-size: 3.5rem;
@@ -2486,12 +2492,12 @@ body {
   .heis::before {
     font-size: 1.75rem;
     top: -35px;
-    left: 10px;
+    left: 15px;
   }
   .heis::after {
     font-size: 1rem;
     top: -25px;
-    left: -15px;
+    left: 0px;
     max-width: 11rem;
   }
   .elina::before {
@@ -2561,6 +2567,14 @@ body {
   .section-social__item, .section-social__item:link, .section-social__item:visited {
     text-decoration: none;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer {
+    -ms-grid-columns: (100px)[3];
+        grid-template-columns: repeat(3, 100px);
+    grid-row-gap: 0.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
