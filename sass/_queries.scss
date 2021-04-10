@@ -146,6 +146,7 @@
   .section-us__profiles {
     margin-bottom: 24rem;
   }
+
   // ABOUT.HTML
   // ARTIFICIA.HTML
 
@@ -332,6 +333,10 @@
     &__body {
       font-size: 2.75rem;
     }
+  }
+
+  .section-us__container {
+    padding-bottom: 3rem;
   }
   // INDEX.HTML
 }
@@ -1314,6 +1319,13 @@
     font-size: 1.5rem;
   }
   // ARTIFICIA.HTML
+
+  // ABOUT.HTML
+
+  .about-description {
+    margin: 3rem auto;
+  }
+  // AbOUT.html
 
   // FOOTER
   .footer {

@@ -86,8 +86,6 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-bottom: 1.5px solid var(--color-primary);
   height: 110px;
   -webkit-transition: var(--nav-transition);
@@ -443,7 +441,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  height: 7rem;
   margin-bottom: 25rem;
 }
 
@@ -1934,6 +1932,9 @@ body {
   .header__body {
     font-size: 2.75rem;
   }
+  .section-us__container {
+    padding-bottom: 3rem;
+  }
 }
 
 /* Small phones to small tablets: from 481 to (originally-- changed 3.24.21) 767px */
@@ -2612,6 +2613,9 @@ body {
   }
   .header-subtitle {
     font-size: 1.5rem;
+  }
+  .about-description {
+    margin: 3rem auto;
   }
   .footer {
     -ms-grid-columns: (100px)[3];

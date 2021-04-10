@@ -10,9 +10,16 @@ function headerShrink() {
       function () {
   
         let st = window.pageYOffset || document.documentElement.scrollTop;
-  
-        if (st > lastScrollTop) {
-          document.querySelector('nav').style.top = "-150px";
+
+      let scrollTopDiff = st - lastScrollTop;
+      scrollTopDiff = Math.abs(scrollTopDiff);
+
+      console.log(scrollTopDiff);
+
+      let w = window.innerWidth;
+
+      if (st > lastScrollTop && w > 450) {
+        document.querySelector('nav').style.top = "-150px";
 
           
         } else {

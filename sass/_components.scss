@@ -14,7 +14,6 @@
   z-index: 1000;
   position: sticky;
   top: 0;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   border-bottom: 1.5px solid var(--color-primary);
   height: 110px;
 
@@ -329,7 +328,7 @@
     text-align: center;
     justify-items: center;
     align-items: center;
-    height: 10vh;
+    height: 7rem;
     margin-bottom: 25rem;
 
     &--title {
