@@ -32,6 +32,50 @@ function headerShrink() {
   }
   
   headerShrink();
+
+  
+// // Image Slideshow - index header section
+
+// let slideIndexNum = 1;
+
+
+// // Next/previous controls
+// const plusSlidesNum = (n) => {showSlides(slideIndexNum += n)}
+
+// // Thumbnail image controls
+// currentSlideNum = (n) => { showSlides(slideIndexNum = n)}
+
+// const showSlidesIndex = (n) => {
+
+//   let i;
+
+//   const slides = document.getElementsByClassName('technical-img-index');
+//   const dots = document.getElementsByClassName('dot');
+
+//   if(n > slides.length) {slideIndexNum = 1};
+
+//   if (n < 1) {slideIndexNum = slides.length};
+
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
+//   }
+
+
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(' active', '');
+//   }
+
+//   slides[slideIndexNum - 1].style.display = 'block';
+//   dots[slideIndexNum - 1].className += ' active';
+
+//   setTimeout(showSlidesIndex, 1000);
+//   console.log(slideIndexNum);
+  
+
+  
+// }
+
+// showSlidesIndex(slideIndexNum);
   
   
 

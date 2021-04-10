@@ -122,7 +122,7 @@
   // INDEX.HTML
   .header {
     &__title {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     &__body {
@@ -410,6 +410,16 @@
   // ARTIFICIA.HTML
 
   // INDEX.HTML
+
+  .header-title-insert {
+    font-size: 5rem;
+  }
+
+  .header-subtitle-insert {
+    font-size: 3rem;
+    height: auto;
+  }
+
   .header {
     &__title {
       font-size: 4rem;
@@ -687,7 +697,7 @@
 
   .prev,
   .next {
-    top: 35%;
+    top: 50%;
   }
 
   .dot {
@@ -726,7 +736,7 @@
   }
 
   .tech-img-container {
-    height: 200px;
+    width: 300px;
   }
 
   .section-title {
@@ -950,6 +960,27 @@
 
   // ARTIFICIA.HTML
   // INDEX.HTML
+
+  .tech-img-container {
+    width: 275px;
+    height: 250px;
+  }
+
+  .header {
+    border-top: none;
+  }
+
+  .header-title-insert {
+    font-size: 4rem;
+  }
+
+  .header-subtitle-insert {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
   .box {
     height: 600px;
   }
@@ -1023,6 +1054,10 @@
   }
   // ABOUT.HTML
   // artificia.html
+
+  .brooch-img {
+    flex-shrink: 1;
+  }
 
   .section-brooch__container {
     align-items: stretch;
@@ -1210,13 +1245,13 @@
     }
 
     &__title {
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-bottom: -0.25rem;
     }
 
     &__body {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
+      font-size: 2.25rem;
+      line-height: 2rem;
     }
   }
 
@@ -1244,7 +1279,7 @@
 
   .section-us__profiles {
     &:last-child {
-      margin-bottom: 25rem;
+      margin-bottom: 35rem;
     }
   }
 
@@ -1326,6 +1361,28 @@
     margin: 3rem auto;
   }
   // AbOUT.html
+
+  // INDEX.HTML
+  // INDEX.HTML
+  .header {
+    &__description {
+      height: 30%;
+      width: 90%;
+      top: 75%;
+      left: 50%;
+    }
+
+    &__title {
+      font-size: 3rem;
+      margin-bottom: -0.25rem;
+    }
+
+    &__body {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+  // INDEX.HTML
 
   // FOOTER
   .footer {
