@@ -33,6 +33,15 @@
 @media only screen and (max-width: 1406px) {
   .section-us {
     &__container2 {
+      grid-template-columns: repeat(2, 30rem);
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1385px) {
+  .section-us {
+    &__container2 {
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     }
   }
@@ -128,7 +137,7 @@
 @media only screen and (max-width: 1023px) {
   // NAV BAR
   .nav__item {
-    margin-right: 0;
+    margin-right: 1rem;
     min-width: 75px;
   }
   // NAV BAR
@@ -426,11 +435,11 @@
   }
 
   .lunagridcontainer {
-    grid-template-rows: 1fr 250px;
+    grid-template-rows: 200px 1fr;
   }
 
   .luna-description {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 2 / 1 / 2 / 4;
 
     &::before {
       font-size: 2rem;
@@ -447,7 +456,7 @@
   }
 
   .lunasubcontainer {
-    grid-area: 2 / 1 / 3 / 4;
+    grid-area: 1 / 1 / 3 / 4;
     flex-direction: row;
     justify-content: center;
     margin: 0;
@@ -646,6 +655,11 @@
 }
 
 @media only screen and (max-width: 620px) {
+  // NAV
+  .nav__title {
+    font-size: 2.5rem;
+  }
+  // NAV
   // ARTIFICIA.HTML
 
   // ARTIFICIA.HTML
@@ -894,6 +908,10 @@
     }
   }
 
+  .banner-box {
+    top: 20%;
+  }
+
   .header {
     &__description {
       height: 30%;
@@ -915,6 +933,18 @@
   // INDEX.HTML
 }
 @media only screen and (max-width: 500px) {
+  // NAV
+  .nav__title {
+    display: none;
+  }
+  // NAV
+  // ARTIFICIA.HTML
+  .lunagridcontainer {
+    grid-template-rows: 150px 1fr;
+  }
+
+  // ARTIFICIA.HTML
+  // INDEX.HTML
   .box {
     height: 600px;
   }
@@ -924,7 +954,7 @@
   }
 
   .banner-box {
-    top: 25%;
+    top: 15%;
     left: 50%;
     margin-left: -150px;
 
@@ -1253,6 +1283,38 @@
 }
 
 @media only screen and (max-width: 360px) {
+  // ARTIFICIA.HTMl
+
+  .lunagridcontainer {
+    grid-template-rows: 100px 1fr;
+  }
+
+  .lunaprofilecontainer {
+    height: 100px;
+  }
+
+  // ARTIFICIA.HTML
+
+  .banner-box {
+    top: 15%;
+    left: 50%;
+    margin-left: -125px;
+
+    height: 450px;
+    max-width: 250px;
+  }
+
+  .header-banner {
+    img {
+      width: 250px;
+    }
+  }
+
+  .header-subtitle {
+    font-size: 1.5rem;
+  }
+  // ARTIFICIA.HTML
+
   // FOOTER
   .footer {
     grid-template-columns: repeat(3, 100px);
