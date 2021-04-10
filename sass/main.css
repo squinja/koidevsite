@@ -2479,9 +2479,9 @@ body {
     -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
-  .brooch-img {
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+  .brooch-img-container {
+    width: 300px;
+    margin: 0 auto;
   }
   .section-brooch__container {
     -webkit-box-align: stretch;
