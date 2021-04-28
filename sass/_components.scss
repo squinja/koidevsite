@@ -96,7 +96,7 @@
   text-align: center;
 
   font-size: 6rem;
-  font-family: "", sans-serif;
+  font-family: "ultraregular", sans-serif;
   color: var(--artificia-blue);
   text-shadow: var(--artificia-blue-text-glow);
 }
@@ -206,6 +206,7 @@
   justify-content: center;
 
   &__container {
+    display: flex;
     background-image: var(--artificia-gradient);
     box-shadow: inset 3px 4px 10px #111;
     // box-shadow: var(--shadow-dark);
@@ -216,6 +217,7 @@
     margin: 4rem 4rem;
     max-width: 80vw;
     max-width: 800px;
+    min-height: 450px;
   }
 
   &__left {
@@ -224,7 +226,11 @@
     align-items: center;
     position: relative;
 
-    padding: 2rem 10rem 3rem 3rem;
+    padding-right: -20%;
+
+    max-width: 600px;
+
+    padding: 2rem 1rem 3rem 3rem;
 
     color: var(--color-gray-dark-1);
 
@@ -243,14 +249,19 @@
   }
 
   &__right {
-    position: absolute;
-    top: 0;
-    right: -18rem;
-    height: 110%;
-    max-height: 550px;
+    // position: absolute;
+    // top: 0;
+    // right: -18rem;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    max-height: 450px;
+
+    // margin-right: -50%;
 
     &--lunaimage {
       height: 100%;
+      margin-right: -50%;
     }
   }
 }
@@ -332,10 +343,11 @@
     padding: 5rem 0 0 0rem;
     font-size: 2rem;
     display: grid;
-    // align-content: center;
+    align-items: center;
+    // justify-content: center;
+    min-height: 300px;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
-    align-content: stretch;
   }
 
   &__container2 {
@@ -364,7 +376,7 @@
 
     &--title2 {
       font-family: "Raleway", sans-serif;
-      font-size: 2rem;
+      font-size: 1.4rem;
       font-weight: 300;
       color: var(--color-gray-dark-2);
       padding-bottom: 1rem;
@@ -1022,7 +1034,6 @@
 .brooch-img {
   height: auto;
   width: 100%;
-  max-width: 500px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -77,6 +77,7 @@ body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -181,7 +182,7 @@ body {
   height: auto;
   text-align: center;
   font-size: 6rem;
-  font-family: "Ultra", sans-serif;
+  font-family: "ultraregular", sans-serif;
   color: var(--artificia-blue);
   text-shadow: var(--artificia-blue-text-glow);
 }
@@ -193,7 +194,7 @@ body {
   text-align: center;
   word-spacing: 2rem;
   font-size: 3rem;
-  font-family: "Ultra", sans-serif;
+  font-family: "ultraregular", sans-serif;
   color: var(--color-gray-dark-1);
 }
 
@@ -294,6 +295,9 @@ body {
 }
 
 .section-artificia__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-image: var(--artificia-gradient);
   -webkit-box-shadow: inset 3px 4px 10px #111;
           box-shadow: inset 3px 4px 10px #111;
@@ -303,6 +307,7 @@ body {
   margin: 4rem 4rem;
   max-width: 80vw;
   max-width: 800px;
+  min-height: 450px;
 }
 
 .section-artificia__left {
@@ -317,7 +322,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 2rem 10rem 3rem 3rem;
+  padding-right: -20%;
+  max-width: 600px;
+  padding: 2rem 1rem 3rem 3rem;
   color: var(--color-gray-dark-1);
 }
 
@@ -337,15 +344,19 @@ body {
 }
 
 .section-artificia__right {
-  position: absolute;
-  top: 0;
-  right: -18rem;
-  height: 110%;
-  max-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  max-height: 450px;
 }
 
 .section-artificia__right--lunaimage {
   height: 100%;
+  margin-right: -50%;
 }
 
 .btn--artificia {
@@ -444,11 +455,13 @@ body {
   font-size: 2rem;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
 }
 
 .section-us__container2 {
@@ -485,7 +498,7 @@ body {
 
 .section-us__profiles--title2 {
   font-family: "Raleway", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: var(--color-gray-dark-2);
   padding-bottom: 1rem;
@@ -1228,7 +1241,6 @@ body {
 .brooch-img {
   height: auto;
   width: 100%;
-  max-width: 500px;
 }
 
 .section-about {
