@@ -98,7 +98,6 @@ function suitorScroll() {
       const scrollToSuitor = document.getElementById('section-suitors-tag').getBoundingClientRect().top - 250;
 
       if (scrollToSuitor <= 0 && check == false) {
-        // console.log('scrolled past header meow');
         nemo.style.transform = "translateX(0)";
         zane.style.transform = "translateX(0)";
         petra.style.transform = "translateX(0)";

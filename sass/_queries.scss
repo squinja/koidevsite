@@ -907,6 +907,10 @@
     }
   }
 
+  .brooch-img {
+    display: none;
+  }
+
   // ARTIFICIA.HTML
 
   // INDEX.HTML
@@ -1025,7 +1029,7 @@
 @media only screen and (max-width: 420px) {
   // FOOTER
   .footer {
-    grid-template-columns: repeat(3, 125px);
+    // grid-template-columns: repeat(3, 125px);
     grid-row-gap: 0.5rem;
   }
   // FOOTER
@@ -1291,6 +1295,7 @@
   .section-social {
     .final-btn::after {
       width: 75px;
+      height: 40px;
       top: 90px;
     }
 
@@ -1387,7 +1392,7 @@
 
   // FOOTER
   .footer {
-    grid-template-columns: repeat(3, 100px);
+    // grid-template-columns: repeat(3, 100px);
     grid-row-gap: 0.5rem;
   }
   // FOOTER
