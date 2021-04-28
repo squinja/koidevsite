@@ -1262,11 +1262,12 @@
 
   .section-artificia {
     &__container {
-      width: 325px;
+      width: 300px;
+      left: 50%;
     }
     &__left {
-      padding: 2rem;
-      margin: 0 2rem;
+      padding: 1rem 0 2rem 0;
+      margin: 0 1.25rem;
     }
 
     &__right {
