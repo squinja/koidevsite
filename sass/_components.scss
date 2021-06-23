@@ -226,7 +226,7 @@
     align-items: center;
     position: relative;
 
-    padding-right: -20%;
+    // padding-right: -20%;
 
     max-width: 600px;
 
@@ -896,7 +896,7 @@
   height: 100%;
   border: 3px solid var(--color-primary);
   border-radius: 3rem;
-  box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
   display: none;
 }
 
@@ -904,7 +904,7 @@
   height: 100%;
   border: 3px solid var(--color-primary);
   border-radius: 3rem;
-  box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
   display: none;
 }
 

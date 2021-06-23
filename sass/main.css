@@ -321,7 +321,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding-right: -20%;
   max-width: 600px;
   padding: 2rem 1rem 3rem 3rem;
   color: var(--color-gray-dark-1);
@@ -1075,8 +1074,8 @@ body {
   height: 100%;
   border: 3px solid var(--color-primary);
   border-radius: 3rem;
-  -webkit-box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
-          box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
   display: none;
 }
 
@@ -1084,8 +1083,8 @@ body {
   height: 100%;
   border: 3px solid var(--color-primary);
   border-radius: 3rem;
-  -webkit-box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
-          box-shadow: 1 1 3rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.4);
   display: none;
 }
 
@@ -1302,93 +1301,6 @@ body {
 .navbar--shrink__item, .navbar--shrink__item:link, .navbar--shrink__item:visited {
   text-decoration: none;
   color: red;
-}
-
-.glitch {
-  top: 5;
-  position: absolute;
-  mix-blend-mode: screen;
-  z-index: 1;
-  -webkit-transform: translate(5px, 4px);
-          transform: translate(5px, 4px);
-}
-
-.r {
-  -webkit-filter: hue-rotate(140deg);
-          filter: hue-rotate(140deg);
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
-  z-index: 60;
-  opacity: 20%;
-  mix-blend-mode: difference;
-}
-
-.b {
-  -webkit-filter: hue-rotate(300deg);
-          filter: hue-rotate(300deg);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  z-index: 60;
-  opacity: 20%;
-  mix-blend-mode: difference;
-}
-
-.animateGlitchR {
-  -webkit-animation: glitchR 0.5s infinite;
-          animation: glitchR 0.5s infinite;
-}
-
-.animateGlitchB {
-  -webkit-animation: glitchB 0.5s infinite;
-          animation: glitchB 0.5s infinite;
-}
-
-@-webkit-keyframes glitchR {
-  0%,
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes glitchR {
-  0%,
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  50% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes glitchB {
-  0%,
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
-}
-
-@keyframes glitchB {
-  0%,
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-  }
 }
 
 .nemo {
